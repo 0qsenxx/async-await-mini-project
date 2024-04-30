@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "description": "Loren ipsum dollar sit ammet",
+      "id": "2584",
+      "authorAvatarUrl": "https://i.pinimg.com/474x/55/1f/ff/551fff636303fb8a696c213736ddc09e.jpg",
+      "authorNickname": "0qsenxx"
+    },
+    {
+      "description": "Hello world",
+      "id": "d9bb",
+      "authorAvatarUrl": "https://i.pinimg.com/474x/55/1f/ff/551fff636303fb8a696c213736ddc09e.jpg",
+      "authorNickname": "0qsenxx"
+    }
+  ],
+  "users": [
+    {
+      "id": "80ac",
+      "userName": "Semen",
+      "nickname": "0qsenxx",
+      "password": "Hello"
+    },
+    {
+      "id": "058d",
+      "userName": "Michael",
+      "nickname": "m1xture",
+      "password": "lalalallala"
+    }
+  ]
+}

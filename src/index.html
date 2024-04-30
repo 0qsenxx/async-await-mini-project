@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="welcome__message"></h2>
+      <div class="add-post__menu">
+        <button type="button" class="add-post__button">
+          <img src="./imgs/add.svg" alt="add post" />
+        </button>
+        <p>Add post</p>
+      </div>
+    </header>
+    <ul class="posts__list"></ul>
+
+    <!-- ? registr modal -->
+    <div class="backdrop is-hidden">
+      <div class="registr__modal">
+        <form class="registr__form">
+          <button type="button" class="close-registr__btn">
+            <img src="./imgs/close.svg" />
+          </button>
+          <input
+            type="text"
+            class="registr-username__input registr__input"
+            placeholder="Username"
+            name="username"
+            required
+          />
+          <input
+            type="text"
+            class="registr-nickname__input registr__input"
+            placeholder="Nickname"
+            name="nickname"
+            required
+          />
+          <input
+            type="password"
+            class="registr-password__input registr__input"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <input
+            type="file"
+            accept="image/png, image/jpeg"
+            placeholder="Choose avatar"
+            name="avatarUrl"
+            class="registr-avatar__input"
+            required
+          />
+          <p class="nickname-error">
+            Unfortunately this nickname is already taken
+          </p>
+          <button type="button" class="registr-login__button">Log in</button>
+          <button type="submit" class="registr__button">Registration</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ? login modal -->
+    <div class="backdrop-login is-hidden-login">
+      <div class="login__modal">
+        <form class="login__form">
+          <button type="button" class="close-login__btn">
+            <img src="./imgs/close.svg" />
+          </button>
+          <input
+            type="text"
+            class="login-nickname__input login__input"
+            placeholder="Nickname"
+            name="nickname"
+          />
+          <input
+            type="password"
+            class="login-password__input login__input"
+            placeholder="Password"
+            name="password"
+          />
+          <p class="nickname-error-login">No such user found</p>
+          <button type="button" class="login-registr__button">
+            Registration
+          </button>
+          <button type="submit" class="login__button">Log in</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ? add post modal -->
+    <div class="backdrop-add-post is-hidden-add-post">
+      <div class="add-post__modal">
+        <button type="button" class="close-add-post__btn">
+          <img src="./imgs/close.svg" />
+        </button>
+        <h3>Please upload post img</h3>
+        <form class="add-post__form">
+          <textarea
+            name="addPostDescription"
+            cols="30"
+            rows="5"
+            placeholder="Please type post description"
+          ></textarea>
+          <button type="submit">Publish</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ? edit post modal-->
+    <div class="backdrop-edit is-hidden-edit">
+      <div class="edit__modal">
+        <button type="button" class="close-edit-post__btn">
+          <img src="./imgs/close.svg" />
+        </button>
+        <form class="edit__form">
+          <textarea
+            name="editDescription"
+            cols="30"
+            rows="5"
+            placeholder="Please type edited description"
+            class="edit-post__description"
+          ></textarea>
+          <button type="submit">Edit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ?scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
